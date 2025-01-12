@@ -1,0 +1,182 @@
+#body {
+    height: 886px;
+
+}
+
+
+.system2 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+
+}
+
+.text {
+
+
+    box-sizing: border-box;
+    width: 20%;
+    margin-right: 10px;
+    text-align: center;
+
+    font-family: Impact;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0px 1px 0px #528ecc;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+.time_location {
+
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#showbox {
+    background-color: beige;
+    box-shadow: 3px 4px 0px 0px gray;
+    margin-top: 30px;
+    margin-right: 5px;
+
+    font-family: Impact;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0px 1px 0px #528ecc;
+
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 180px;
+
+
+}
+
+#ti_co {
+    background-color: beige;
+    box-shadow: 3px 4px 0px 0px gray;
+
+    font-family: Impact;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0px 1px 0px #528ecc;
+
+
+    margin-top: 30px;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 180px;
+
+
+}
+
+
+
+
+
+
+
+
+
+.result {
+
+
+    height: 20%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.result2 {
+    font-family: Impact;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 0px 1px 0px #528ecc;
+    text-align: left;
+
+}
+
+
+
+.result3 {
+    font-family: Impact;
+    font-size: 20px;
+    font-weight: bold;
+    width: max-content;
+    margin-left: 10%;
+
+    text-shadow: 0px 1px 0px #528ecc;
+    /* text-align: center; */
+
+}
+
+
+
+
+
+
+
+
+
+
+.plan {
+    display: flex;
+
+
+
+
+
+    height: 55%;
+    width: 50%;
+    padding-left: 10%;
+}
+
+
+
+
+
+
+.plan2 {
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: right;
+    width: 450px;
+    padding-top: 8%;
+    padding-left: 20%;
+
+}
+
+.planm {
+    font-weight: bold;
+    font-size: 1.5em;
+    height: 40px;
+
+}
+
+
+.btn {
+    background-color: rgb(185, 200, 249);
+
+    font-size: 25px;
+
+    /* 圓角功能 */
+    border-radius: 5px;
+    /* 滑鼠游標 */
+    cursor: pointer;
+    height: 40px;
+}

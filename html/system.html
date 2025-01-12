@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RI System</title>
+
+
+
+
+
+
+        <link rel="stylesheet" type="text/css" href="../css/system.css">
+        <script src="../js/system.js"></script>
+
+
+
+    </head>
+
+
+
+
+
+
+    <body id="body" onload="ShowTime()" style="background-color:aliceblue">
+
+
+
+        <!-- 選單 -->
+        <div class="system2">
+            <button name="in" onclick="home()" class="text"> <a
+                    href="http://127.0.1:3000/"
+                    style="color:black;text-decoration:none;">首頁</a></button>
+            <button name="sey" onclick="system()" class="text"> <a
+                    href="http://127.0.1:3000/system.html"
+                    style="color:black;text-decoration:none;">系統</a></button>
+            <button name="set" onclick="setting()" class="text"> <a
+                    href="http://127.0.1:3000/setting.html"
+                    style="color:black;text-decoration:none;">設定</a></button>
+        </div>
+
+
+
+
+        <!-- 時間 座標 -->
+        <div onload="ShowTime()" class="time_location">
+            <div id="showbox"></div>
+            <div id="ti_co">現在位置:</div>
+        </div>
+
+        <!-- 預報結果 -->
+        <div class="result">
+            <div class="result2">未來_預報結果:</div>
+        </div>
+
+
+
+
+
+
+
+        <!-- 預測圖 選單 -->
+        <div class="plan">
+            <!-- <a href="https://www.cwb.gov.tw/V8/C/W/OBS_Sat.html?Area=2">
+                <img
+                    src="../image/1111.jpg"
+                    alt="氣象圖" height="100%" />
+            </a> -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1141253.908549387!2d120.7707761965776!3d25.006406849318232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ac72bce20a99%3A0x3f6a35cedd0ac2e0!2sTaipei!5e0!3m2!1sen!2stw!4v1663640832088!5m2!1sen!2stw"
+                width="600px" height="450" style="border:0;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+
+
+
+
+            <div class="plan2">
+
+
+                <select class="planm" onchange="place(this)">
+                    <option value="">請選擇位址</option>
+                    <option value="1">Taipei city
+                    </option>
+                    <option value="3">Taichung city</option>
+                    <option value="4">Alishan</option>
+                    <option disabled value="2">Taoyuan city</option>
+                </select>
+
+
+                <select class="planm" onchange="time(this)">
+                    <option value="">請選擇預測時間</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                    <option value="18">18</option>
+                    <option value="24">24</option>
+
+                </select>
+
+                <button class="btn">trigger</button>
+
+                <div>
+                    <div class="result3"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>

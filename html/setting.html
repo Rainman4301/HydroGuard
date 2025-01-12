@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RI Setting</title>
+
+
+        <link rel="stylesheet" type="text/css" href="../css/setting.css" />
+        <script src="../js/setting.js"></script>
+
+
+    </head>
+    <body class="container">
+        <div class="headline">
+            <button name="in" onclick="home()" class="item"> <a
+                    href="http://127.0.1:3000/"
+                    style="color:black;text-decoration:none;">首頁</a></button>
+            <button name="sey" onclick="system()" class="item"> <a
+                    href="http://127.0.1:3000/system.html"
+                    style="color:black;text-decoration:none;">系統</a></button>
+            <button name="set" onclick="setting()" class="item"> <a
+                    href="http://127.0.1:3000/setting.html"
+                    style="color:black;text-decoration:none;">設定</a></button>
+        </div>
+        <div class="option-container">
+
+
+
+            <div>
+                <label>
+                    <input type="checkbox" name="" id="" class="checkbox">
+                    <span class="btn-box">
+                        <span class="btn"></span>
+                    </span>
+                    <span class="text">RI推播系統 off/on</span>
+                </label>
+            </div>
+
+
+
+
+            <select class="option" onchange="language(this)">
+                <option value="chi">中文</option>
+                <option value="eng">English</option>
+
+            </select>
+
+        </div>
+    </body>
+</html>
